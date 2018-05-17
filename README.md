@@ -9,7 +9,7 @@ At the start, this program asks the user three questions:
 
 	•	How much RAM memory is there on the simulated computer? The program receives the number in bytes (no kilobytes or words). 
 	
-	•	What is the size of a page/frame. The enumeration of pages starts from 0.
+	•	What is the size of a page/frame? The enumeration of pages starts from 0.
 	
 	•	How many hard disks does the simulated computer have? The enumeration of the hard disks starts with 0.
 
@@ -18,10 +18,7 @@ After these questions are answered, the simulation begins. The program constantl
 The possible inputs are:
 
 
-A       ‘A’ input means that a new process has been created. 
-When a new process arrives, the program creates its PCB and allocate memory for it’s first page (page #0).
-Also, when a new process is created the program sends it to the top level of the ready-queue or allow it to use the CPU right away.
-When choosing a PID for the new process start from 1 and go up.
+A        A new process has been created. When a new process arrives, the program creates its PCB and allocate memory for it’s first page (page #0).Also, when a new process is created the program sends it to the top level of the ready-queue or allow it to use the CPU right away.When choosing a PID for the new process start from 1 and go up.
 
 Q       The currently running process has spent a time quantum using the CPU. If the same process continues to use the CPU and one more Q command arrives, it means that the process has spent one more time quantum.
 
